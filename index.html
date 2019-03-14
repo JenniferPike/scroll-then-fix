@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scroll Then Fix</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div class="wrap" id="wrap">
+
+    <header class="top-header">
+        <span class="menu-icon">☰</span>
+    </header>
+    <div class="heading">
+        <h1>Scroll-Then-Fix!</h1>
+    </div>
+    <div class="search"> 
+        <input type="search" placeholder="Search" />
+    </div>
+
+    <div class="top">
+        <div class="hero"></div>
+    </div>
+
+    <div class="jump">
+        <li><a href="#what"><i class="fas fa-arrow-circle-down"></i></a></li>
+    </div>
+    <main>
+        <section class="section1">
+            <div class="what" id="what">
+                <div class="whatTitle" >
+                    <h2>What is it?</h2>
+                </div>
+        
+                <div class="gifText">
+                    <div class="gif">
+                        <iframe src="https://giphy.com/embed/SqmkZ5IdwzTP2" width="480" height="394" frameBorder="0" class="giphy-embed"
+                            allowFullScreen></iframe>
+                        <a hxref="https://giphy.com/gifs/reaction-what-despicable-me-SqmkZ5IdwzTP2"aria-hidden="true">via GIPHY</a>
+                    </div>
+                    <div class="text">
+                        <p>
+                            1. Sweet effect to prevent certain content from scrolling off the page 
+                        </p>
+                        <!-- <p>
+                            2.
+                        </p> -->
+                    </div>
+                </div>
+                <div class="jump">
+                    <li><a href="#how"><i class="fas fa-arrow-circle-down"></i></a></li>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="how" id="how">
+                <div class="howTitle">
+                    <h2>How do we use it ?</h2>
+                </div>
+                <div class="states" id="states">
+                    <div class="state1">
+                        <img src="assets/state1.png" alt="">
+                    </div>
+                    <div class="state2">
+                        <img src="assets/state2.png" alt="">
+                    </div>
+                </div>
+                <div class="jump">
+                    <li><a href="#code"><i class="fas fa-arrow-circle-down"></i></a></li>
+                </div>
+                <div class="codeDiv"id="code">
+                    <div class="image">
+                        <img src="assets/html.png" alt="">
+                    </div>
+                </div>
+                <div class="jump">
+                    <li><a href="#css"><i class="fas fa-arrow-circle-down"></i></a></li>
+                </div>
+                <div class="cssDiv" id="css">
+                    <div class="image1">
+                        <img src="assets/css1.png" alt="">
+                    </div>
+                    <div class="image2">
+                        <img src="assets/css2.png" alt="">
+                    </div>
+                    <div class="image3">
+                        <img src="assets/css3.png" alt="">
+                    </div>
+                </div>
+                <div class="jump">
+                    <li><a href="#js"><i class="fas fa-arrow-circle-down"></i></a></li>
+                </div>
+                <div class="jsDiv" id="js">
+                    <div class="image">
+                        <img src="assets/js.png" alt="">
+                    </div>
+                </div>
+                <div class="jump">
+                    <li><a href="#examples"><i class="fas fa-arrow-circle-down"></i></a></li>
+                </div>
+            </div>
+        </section>
+        <section class="examples" id="examples">
+            <div class="exampleTitle">
+                <h2> Examples</h2>
+            </div>
+            <div class="exampleList">
+                <ul>
+                    <li><a href="https://codepen.io/simpleminded/pen/noaJj">Example 1</a></li>
+                    <li><a href="https://codepen.io/atelierbram/pen/dMEadR">Example 2</a></li>
+                </ul>
+            </div>
+            <div class="jump">
+                <li><a href="#why"><i class="fas fa-arrow-circle-down"></i></a></li>
+            </div>
+        </section>
+    
+        <section class="section3">
+            <div class="whyTitle" id="why">
+                <h2>Why use it?</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="theEnd">
+            <h2>Thank you!!</h2>
+    
+        </div>
+    </footer>
+
+</div>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'
+    integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+<script>
+        let wrap = $("#wrap");
+
+            wrap.on("scroll", function (e) {
+
+                if (this.scrollTop > 400) {
+                    wrap.addClass("fix-search");
+                } else {
+                    wrap.removeClass("fix-search");
+                }
+
+            });
+    
+</script>
+</body>
+</html>
