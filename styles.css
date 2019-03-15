@@ -166,7 +166,7 @@ body {
     top: 0;
     right: 0;
     padding: 18px 20px;
-    font-size: 43px;
+    font-size: 61px;
     color: #bf0808; }
 
 .search {
@@ -275,7 +275,7 @@ li {
   width: 70%; }
 
 .state1, .state2 {
-  width: 40%; }
+  width: 35%; }
 
 .states {
   display: -webkit-box;
