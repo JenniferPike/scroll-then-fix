@@ -258,15 +258,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly; }
-
-.gif {
-  width: 45%; }
-
-.text {
-  width: 40%; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .gif a {
   display: none; }
@@ -309,7 +303,7 @@ li {
   padding-top: 100px; }
 
 .image1, .image2, .image3 {
-  width: 29%; }
+  width: 25%; }
 
 .exampleList {
   display: -webkit-box;

@@ -132,13 +132,7 @@ li{
 // WHAT SECTION STYLES
 .gifText{
     display:flex;
-    justify-content: space-evenly;
-}
-.gif{
-    width:45%
-}
-.text{
-    width:40%;
+    justify-content: center;
 }
 
 .gif a{
@@ -173,7 +167,7 @@ li{
     padding-top:100px;
 }
 .image1, .image2, .image3{
-    width:29%
+    width:25%
 }
 // EXAMPLE SECTION STYLES
 .exampleList{
